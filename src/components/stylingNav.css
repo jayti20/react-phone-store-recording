@@ -1,0 +1,33 @@
+.Button{
+    text-transform: capitalize;
+    font-size:1.4rem;
+    background: transparent;
+    border:0.05rem solid #009ffd;
+    color:#009ffd;
+    border-radius:0.5rem;
+    padding:0.2rem 0.5rem;
+    cursor:pointer;
+    margin:0.2rem 0.5rem 0.2rem 0;
+    transition:all 0.5s ease-in-out;
+}
+
+button:hover{
+    background:#009ffd;
+    color:#2a2a72;
+}
+button:focus{
+    outline:none;
+}
+
+.nav{
+    background:#2a2a72;
+    
+}
+.nav-link{
+  
+    color:white ;
+    /*1 rem =16px we are using rem is because px is absolute and px is targetting the root element which means even if the user changes its root from 16px to 20px-25px, our site responsive*/
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    
+}
