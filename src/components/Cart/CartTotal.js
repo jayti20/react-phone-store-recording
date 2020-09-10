@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import './cartItemStyles.css'
 import '../modalStyles.css'
+import PayPalButton from './PayPalButton'
 
 function CartTotal(props) {
    
@@ -30,6 +31,7 @@ function CartTotal(props) {
           Carttotal:</span> <strong>$ {props.value.state.cartTotal}</strong>
           
           </h5>
+          <PayPalButton total={props.value.state.cartTotal} clearCart={props.value.clearCart} history={props.history}></PayPalButton>
           </div>
           </div>  
           </div>

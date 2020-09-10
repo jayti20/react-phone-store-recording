@@ -11,7 +11,7 @@ import Default from './components/Default';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import {ProductProvider} from './components/ProductContext'
 import { storeProducts, detailProduct } from './data';
-import PropTypesexample from './components/PropTypesexample';
+//import PropTypesexample from './components/PropTypesexample';
 import Modal from './components/Modal'
 /*for making sure that the original store products is getting altered when a change in made to the state object*/
 let clonedStoreProducts=JSON.parse(JSON.stringify(storeProducts));; 
@@ -170,8 +170,8 @@ removeItem=(id)=>{
 
 }
 clearCart=()=>{
-  let item=false;
-  storeProducts.map(item=>{item.inCart=false})
+  let items=false
+  storeProducts.map(item=>{return(item.inCart=false)})
    
   this.setState({
   

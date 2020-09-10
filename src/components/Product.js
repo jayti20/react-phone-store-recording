@@ -5,7 +5,7 @@ import {ProductConsumer} from './ProductContext'
 import '../App.css'
 import './productWrapper.css'
 import PropTypes from 'prop-types'
-import PropTypesexample from './PropTypesexample'
+//import PropTypesexample from './PropTypesexample'
 
 class Product extends Component {
 
